@@ -58,3 +58,14 @@ gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'friendly_id', '~> 5.4', '>= 5.4.1'
 gem 'sidekiq', '~> 6.1', '>= 6.1.2'
 gem 'name_of_person', '~> 1.1', '>= 1.1.1'
+
+
+# additional gems
+gem "simple_calendar", "~> 2.4.3"
+gem 'trix', "~> 0.10.1"
+gem 'stripe', "~> 5.39.0"
+
+
+group :development, :test do
+  gem 'better_errors'
+end
