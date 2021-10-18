@@ -65,6 +65,8 @@ gem "simple_calendar", "~> 2.4.3"
 gem 'trix', "~> 0.10.1"
 gem 'stripe', "~> 5.39.0"
 
+gem 'rubocop', require: false
+
 
 group :development, :test do
   gem 'better_errors'
