@@ -14,6 +14,7 @@ ActiveStorage.start();
 import "stylesheets/application";
 require("trix");
 require("@rails/actiontext");
+require("purchases");
 
 //= require simple_calendar
 //= require_tree .
