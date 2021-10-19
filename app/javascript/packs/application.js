@@ -12,7 +12,8 @@ Rails.start();
 Turbolinks.start();
 ActiveStorage.start();
 import "stylesheets/application";
+require("trix");
+require("@rails/actiontext");
 
 //= require simple_calendar
-//= require trix
 //= require_tree .

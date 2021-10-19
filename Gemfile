@@ -67,6 +67,8 @@ gem 'stripe', "~> 5.39.0"
 
 gem 'rubocop', require: false
 
+gem 'binding_of_caller'
+
 
 group :development, :test do
   gem 'better_errors'
