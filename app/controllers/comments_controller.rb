@@ -8,9 +8,9 @@ class CommentsController < ApplicationController
     end
 
     def create
-        @comment = @meeting.comments.create(params[:comment].permit(:reply, :meeting_id))
+        # @comment = @meeting.comments.create(params[:comment].permit(:reply, :meeting_id))
+        @comment = set_meeting.comments.create(params[:comment].permit(:reply, :meeting_id))
         @comment.user_id = current_user.id
-        puts @meeting
 
         respond_to do |format|
             if @comment.save
