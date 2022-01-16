@@ -1,20 +1,21 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
-development:
-  <<: *default
-  database: scheduling_app_development
   username: postgres
   password: postgres
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: 127.0.0.1
   port: 5432
+ 
+
+development:
+  <<: *default
+  database: scheduling_app_development
+
 
 test:
   <<: *default
-  database: scheduling_app_development
+  database: scheduling_app_test
 
 production:
   <<: *default
