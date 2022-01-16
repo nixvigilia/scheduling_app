@@ -18,5 +18,5 @@ test:
 
 production:
   <<: *default
-  database: scheduling_app_development
-  # url: <%= ENV['DATABASE_URL'] %>
+  # database: scheduling_app_development
+   url: <%= ENV['DATABASE_URL'] %>
